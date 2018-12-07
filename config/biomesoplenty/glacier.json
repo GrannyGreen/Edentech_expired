@@ -1,10 +1,11 @@
 {
   "canGenerateRivers": false,
+  "beachBiomeLocation": "minecraft:beaches",
   "skyColor": -1,
   "fogDensity": 1.0,
-  "hasBiomeEssence": true,
-  "variationBelow": 12.0,
-  "variationAbove": 12.0,
+  "hasBiomeEssence": false,
+  "variationBelow": 8.0,
+  "variationAbove": 10.0,
   "seaFloorBlock": {
     "block": "minecraft:dirt",
     "properties": {
@@ -13,12 +14,12 @@
     }
   },
   "fillerBlock": {
-    "block": "minecraft:snow",
+    "block": "biomesoplenty:hard_ice",
     "properties": {}
   },
-  "averageHeight": 198.0,
+  "averageHeight": 88.0,
   "topBlock": {
-    "block": "minecraft:snow",
+    "block": "minecraft:ice",
     "properties": {}
   },
   "fogColor": -1,
@@ -47,16 +48,6 @@
       "amountPerChunk": 0.25,
       "enable": true
     },
-    "emeralds": {
-      "minHeight": 4,
-      "with": {
-        "block": "minecraft:emerald_ore",
-        "properties": {}
-      },
-      "amountPerChunk": 12.0,
-      "maxHeight": 32,
-      "enable": true
-    },
     "roots": {
       "with": {
         "block": "biomesoplenty:plant_1",
@@ -67,10 +58,19 @@
       "generationAttempts": 32,
       "amountPerChunk": 4.0,
       "enable": true
+    },
+    "tanzanite": {
+      "minHeight": 4,
+      "with": {
+        "block": "biomesoplenty:gem_ore",
+        "properties": {
+          "variant": "tanzanite"
+        }
+      },
+      "amountPerChunk": 12.0,
+      "maxHeight": 32,
+      "enable": true
     }
   },
-  "weights": {
-    "tundra": 3,
-    "ice_cap": 5
-  }
+  "weights": {}
 }

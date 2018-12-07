@@ -3,8 +3,8 @@
   "skyColor": -1,
   "fogDensity": 1.0,
   "hasBiomeEssence": true,
-  "variationBelow": 12.0,
-  "variationAbove": 12.0,
+  "variationBelow": 50.0,
+  "variationAbove": 50.0,
   "seaFloorBlock": {
     "block": "minecraft:dirt",
     "properties": {
@@ -13,12 +13,12 @@
     }
   },
   "fillerBlock": {
-    "block": "minecraft:snow",
+    "block": "biomesoplenty:ash_block",
     "properties": {}
   },
-  "averageHeight": 198.0,
+  "averageHeight": 120.0,
   "topBlock": {
-    "block": "minecraft:snow",
+    "block": "biomesoplenty:ash_block",
     "properties": {}
   },
   "fogColor": -1,
@@ -47,14 +47,20 @@
       "amountPerChunk": 0.25,
       "enable": true
     },
-    "emeralds": {
-      "minHeight": 4,
-      "with": {
-        "block": "minecraft:emerald_ore",
-        "properties": {}
+    "lava_lakes": {
+      "lineWith": {
+        "block": "minecraft:stone",
+        "properties": {
+          "variant": "stone"
+        }
       },
-      "amountPerChunk": 12.0,
-      "maxHeight": 32,
+      "liquid": {
+        "block": "minecraft:lava",
+        "properties": {
+          "level": "0"
+        }
+      },
+      "amountPerChunk": 2.5,
       "enable": true
     },
     "roots": {
@@ -67,10 +73,30 @@
       "generationAttempts": 32,
       "amountPerChunk": 4.0,
       "enable": true
+    },
+    "lava_flows": {
+      "with": {
+        "block": "minecraft:flowing_lava",
+        "properties": {
+          "level": "0"
+        }
+      },
+      "amountPerChunk": 0.1,
+      "enable": true,
+      "splotchSize": 12
+    },
+    "ruby": {
+      "minHeight": 4,
+      "with": {
+        "block": "biomesoplenty:gem_ore",
+        "properties": {
+          "variant": "ruby"
+        }
+      },
+      "amountPerChunk": 12.0,
+      "maxHeight": 32,
+      "enable": true
     }
   },
-  "weights": {
-    "tundra": 3,
-    "ice_cap": 5
-  }
+  "weights": {}
 }

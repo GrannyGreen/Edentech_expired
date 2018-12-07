@@ -3,8 +3,8 @@
   "skyColor": -1,
   "fogDensity": 1.0,
   "hasBiomeEssence": true,
-  "variationBelow": 12.0,
-  "variationAbove": 12.0,
+  "variationBelow": 80.0,
+  "variationAbove": 200.0,
   "seaFloorBlock": {
     "block": "minecraft:dirt",
     "properties": {
@@ -13,12 +13,14 @@
     }
   },
   "fillerBlock": {
-    "block": "minecraft:snow",
-    "properties": {}
+    "block": "minecraft:stone",
+    "properties": {
+      "variant": "stone"
+    }
   },
-  "averageHeight": 198.0,
+  "averageHeight": 100.0,
   "topBlock": {
-    "block": "minecraft:snow",
+    "block": "minecraft:gravel",
     "properties": {}
   },
   "fogColor": -1,
@@ -57,6 +59,23 @@
       "maxHeight": 32,
       "enable": true
     },
+    "overgrown_stone_patches": {
+      "with": {
+        "block": "biomesoplenty:grass",
+        "properties": {
+          "snowy": "false",
+          "variant": "overgrown_stone"
+        }
+      },
+      "amountPerChunk": 24.0,
+      "enable": true,
+      "splotchSize": 16
+    },
+    "grass": {
+      "amountPerChunk": 4.0,
+      "enable": true,
+      "generators": {}
+    },
     "roots": {
       "with": {
         "block": "biomesoplenty:plant_1",
@@ -67,10 +86,29 @@
       "generationAttempts": 32,
       "amountPerChunk": 4.0,
       "enable": true
+    },
+    "cobblestone_splatter": {
+      "with": {
+        "block": "minecraft:cobblestone",
+        "properties": {}
+      },
+      "generationAttempts": 64,
+      "amountPerChunk": 4.0,
+      "enable": true
+    },
+    "stone_splatter": {
+      "with": {
+        "block": "minecraft:stone",
+        "properties": {
+          "variant": "stone"
+        }
+      },
+      "generationAttempts": 64,
+      "amountPerChunk": 4.0,
+      "enable": true
     }
   },
   "weights": {
-    "tundra": 3,
-    "ice_cap": 5
+    "cold_swamp": 2
   }
 }

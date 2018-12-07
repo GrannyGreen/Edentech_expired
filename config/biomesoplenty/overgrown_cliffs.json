@@ -3,8 +3,8 @@
   "skyColor": -1,
   "fogDensity": 1.0,
   "hasBiomeEssence": true,
-  "variationBelow": 12.0,
-  "variationAbove": 12.0,
+  "variationBelow": 5.0,
+  "variationAbove": 100.0,
   "seaFloorBlock": {
     "block": "minecraft:dirt",
     "properties": {
@@ -13,13 +13,18 @@
     }
   },
   "fillerBlock": {
-    "block": "minecraft:snow",
-    "properties": {}
+    "block": "minecraft:stone",
+    "properties": {
+      "variant": "stone"
+    }
   },
-  "averageHeight": 198.0,
+  "averageHeight": 70.0,
   "topBlock": {
-    "block": "minecraft:snow",
-    "properties": {}
+    "block": "biomesoplenty:grass",
+    "properties": {
+      "snowy": "false",
+      "variant": "overgrown_stone"
+    }
   },
   "fogColor": -1,
   "canGenerateVillages": false,
@@ -35,6 +40,11 @@
       "generationAttempts": 64,
       "amountPerChunk": 1.5,
       "enable": true
+    },
+    "flowers": {
+      "amountPerChunk": 1.5,
+      "enable": true,
+      "generators": {}
     },
     "miners_delight": {
       "with": {
@@ -57,6 +67,11 @@
       "maxHeight": 32,
       "enable": true
     },
+    "grass": {
+      "amountPerChunk": 2.0,
+      "enable": true,
+      "generators": {}
+    },
     "roots": {
       "with": {
         "block": "biomesoplenty:plant_1",
@@ -67,10 +82,25 @@
       "generationAttempts": 32,
       "amountPerChunk": 4.0,
       "enable": true
+    },
+    "sprouts": {
+      "with": {
+        "block": "biomesoplenty:plant_0",
+        "properties": {
+          "variant": "sprout"
+        }
+      },
+      "generationAttempts": 32,
+      "amountPerChunk": 0.25,
+      "enable": true
+    },
+    "trees": {
+      "amountPerChunk": 40.0,
+      "enable": true,
+      "generators": {}
     }
   },
   "weights": {
-    "tundra": 3,
-    "ice_cap": 5
+    "tropical": 2
   }
 }

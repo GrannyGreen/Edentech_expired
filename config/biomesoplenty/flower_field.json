@@ -1,9 +1,10 @@
 {
-  "canGenerateRivers": false,
+  "canGenerateRivers": true,
+  "beachBiomeLocation": "minecraft:beaches",
   "skyColor": -1,
   "fogDensity": 1.0,
   "hasBiomeEssence": true,
-  "variationBelow": 12.0,
+  "variationBelow": 4.0,
   "variationAbove": 12.0,
   "seaFloorBlock": {
     "block": "minecraft:dirt",
@@ -13,17 +14,22 @@
     }
   },
   "fillerBlock": {
-    "block": "minecraft:snow",
-    "properties": {}
+    "block": "minecraft:dirt",
+    "properties": {
+      "snowy": "false",
+      "variant": "dirt"
+    }
   },
-  "averageHeight": 198.0,
+  "averageHeight": 64.0,
   "topBlock": {
-    "block": "minecraft:snow",
-    "properties": {}
+    "block": "minecraft:grass",
+    "properties": {
+      "snowy": "false"
+    }
   },
   "fogColor": -1,
   "canGenerateVillages": false,
-  "canSpawnInBiome": false,
+  "canSpawnInBiome": true,
   "generators": {
     "glowshrooms": {
       "with": {
@@ -36,6 +42,11 @@
       "amountPerChunk": 1.5,
       "enable": true
     },
+    "flowers": {
+      "amountPerChunk": 45.0,
+      "enable": true,
+      "generators": {}
+    },
     "miners_delight": {
       "with": {
         "block": "biomesoplenty:flower_1",
@@ -47,11 +58,18 @@
       "amountPerChunk": 0.25,
       "enable": true
     },
-    "emeralds": {
+    "grass": {
+      "amountPerChunk": 25.0,
+      "enable": true,
+      "generators": {}
+    },
+    "peridot": {
       "minHeight": 4,
       "with": {
-        "block": "minecraft:emerald_ore",
-        "properties": {}
+        "block": "biomesoplenty:gem_ore",
+        "properties": {
+          "variant": "peridot"
+        }
       },
       "amountPerChunk": 12.0,
       "maxHeight": 32,
@@ -70,7 +88,6 @@
     }
   },
   "weights": {
-    "tundra": 3,
-    "ice_cap": 5
+    "warm_temperate": 2
   }
 }

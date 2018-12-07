@@ -1,10 +1,11 @@
 {
   "canGenerateRivers": false,
-  "skyColor": -1,
+  "beachBiomeLocation": "minecraft:beaches",
+  "skyColor": 8441086,
   "fogDensity": 1.0,
-  "hasBiomeEssence": true,
-  "variationBelow": 12.0,
-  "variationAbove": 12.0,
+  "hasBiomeEssence": false,
+  "variationBelow": 1.0,
+  "variationAbove": 1.0,
   "seaFloorBlock": {
     "block": "minecraft:dirt",
     "properties": {
@@ -13,13 +14,17 @@
     }
   },
   "fillerBlock": {
-    "block": "minecraft:snow",
-    "properties": {}
+    "block": "minecraft:sand",
+    "properties": {
+      "variant": "sand"
+    }
   },
-  "averageHeight": 198.0,
+  "averageHeight": 64.0,
   "topBlock": {
-    "block": "minecraft:snow",
-    "properties": {}
+    "block": "minecraft:sand",
+    "properties": {
+      "variant": "sand"
+    }
   },
   "fogColor": -1,
   "canGenerateVillages": false,
@@ -47,16 +52,6 @@
       "amountPerChunk": 0.25,
       "enable": true
     },
-    "emeralds": {
-      "minHeight": 4,
-      "with": {
-        "block": "minecraft:emerald_ore",
-        "properties": {}
-      },
-      "amountPerChunk": 12.0,
-      "maxHeight": 32,
-      "enable": true
-    },
     "roots": {
       "with": {
         "block": "biomesoplenty:plant_1",
@@ -69,8 +64,5 @@
       "enable": true
     }
   },
-  "weights": {
-    "tundra": 3,
-    "ice_cap": 5
-  }
+  "weights": {}
 }

@@ -3,8 +3,8 @@
   "skyColor": -1,
   "fogDensity": 1.0,
   "hasBiomeEssence": true,
-  "variationBelow": 12.0,
-  "variationAbove": 12.0,
+  "variationBelow": 35.0,
+  "variationAbove": 35.0,
   "seaFloorBlock": {
     "block": "minecraft:dirt",
     "properties": {
@@ -13,17 +13,22 @@
     }
   },
   "fillerBlock": {
-    "block": "minecraft:snow",
-    "properties": {}
+    "block": "minecraft:dirt",
+    "properties": {
+      "snowy": "false",
+      "variant": "dirt"
+    }
   },
-  "averageHeight": 198.0,
+  "averageHeight": 100.0,
   "topBlock": {
-    "block": "minecraft:snow",
-    "properties": {}
+    "block": "minecraft:grass",
+    "properties": {
+      "snowy": "false"
+    }
   },
   "fogColor": -1,
   "canGenerateVillages": false,
-  "canSpawnInBiome": false,
+  "canSpawnInBiome": true,
   "generators": {
     "glowshrooms": {
       "with": {
@@ -47,15 +52,10 @@
       "amountPerChunk": 0.25,
       "enable": true
     },
-    "emeralds": {
-      "minHeight": 4,
-      "with": {
-        "block": "minecraft:emerald_ore",
-        "properties": {}
-      },
-      "amountPerChunk": 12.0,
-      "maxHeight": 32,
-      "enable": true
+    "grass": {
+      "amountPerChunk": 10.0,
+      "enable": true,
+      "generators": {}
     },
     "roots": {
       "with": {
@@ -67,10 +67,19 @@
       "generationAttempts": 32,
       "amountPerChunk": 4.0,
       "enable": true
+    },
+    "emerald": {
+      "minHeight": 4,
+      "with": {
+        "block": "minecraft:emerald_ore",
+        "properties": {}
+      },
+      "amountPerChunk": 12.0,
+      "maxHeight": 32,
+      "enable": true
     }
   },
   "weights": {
-    "tundra": 3,
-    "ice_cap": 5
+    "cool_temperate": 7
   }
 }

@@ -2,9 +2,9 @@
   "canGenerateRivers": false,
   "skyColor": -1,
   "fogDensity": 1.0,
-  "hasBiomeEssence": true,
-  "variationBelow": 12.0,
-  "variationAbove": 12.0,
+  "hasBiomeEssence": false,
+  "variationBelow": 48.0,
+  "variationAbove": 64.0,
   "seaFloorBlock": {
     "block": "minecraft:dirt",
     "properties": {
@@ -13,13 +13,18 @@
     }
   },
   "fillerBlock": {
-    "block": "minecraft:snow",
-    "properties": {}
+    "block": "minecraft:stone",
+    "properties": {
+      "variant": "stone"
+    }
   },
-  "averageHeight": 198.0,
+  "averageHeight": 120.0,
   "topBlock": {
-    "block": "minecraft:snow",
-    "properties": {}
+    "block": "biomesoplenty:grass",
+    "properties": {
+      "snowy": "false",
+      "variant": "overgrown_stone"
+    }
   },
   "fogColor": -1,
   "canGenerateVillages": false,
@@ -35,6 +40,22 @@
       "generationAttempts": 64,
       "amountPerChunk": 1.5,
       "enable": true
+    },
+    "hot_springs": {
+      "liquid": {
+        "block": "biomesoplenty:hot_spring_water",
+        "properties": {
+          "level": "0"
+        }
+      },
+      "amountPerChunk": 0.5,
+      "enable": true,
+      "grassBorderWith": {
+        "block": "minecraft:grass",
+        "properties": {
+          "snowy": "false"
+        }
+      }
     },
     "miners_delight": {
       "with": {
@@ -67,10 +88,12 @@
       "generationAttempts": 32,
       "amountPerChunk": 4.0,
       "enable": true
+    },
+    "trees": {
+      "amountPerChunk": 0.5,
+      "enable": true,
+      "generators": {}
     }
   },
-  "weights": {
-    "tundra": 3,
-    "ice_cap": 5
-  }
+  "weights": {}
 }
